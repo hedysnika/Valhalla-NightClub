@@ -1,6 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
-module.exports = nextConfig
+const config = {
+  reactStrictMode: true,
+  i18n: {
+    locales: ['ge', 'en', 'ru'],
+    defaultLocale: 'ge',
+    localeDetection: false,
+  },
+  images: {
+    domains: ["i.imgur.com"],
+  },
+};
+
+export default config;
