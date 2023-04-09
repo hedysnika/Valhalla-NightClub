@@ -75,7 +75,7 @@ export function Navigation() {
               <Link href="https://www.facebook.com/valhallaclub11/photos" target="blank" className="hover:bg-[#26678c] px-12 py-1.5 rounded-md">
                 {t("gallery")}
               </Link>
-              <Link href="/upcomingevents" className="hover:bg-[#26678c] px-12 py-1.5 rounded-md">
+              <Link href="https://www.facebook.com/valhallaclub11/events" className="hover:bg-[#26678c] px-12 py-1.5 rounded-md">
                 {t("events")}
               </Link>
 

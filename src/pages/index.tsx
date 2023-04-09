@@ -36,6 +36,11 @@ const { t } = useTranslation("common");
         </p>
 
       </div>
+
+      <div className="pb-5 text-sm text-center text-[#c9c9c9] font-light">
+      Rkinis Rigi N11, Tbilisi, Georgia <br />
+      +995 595 20 86 68<br />
+      </div>
     </main>
   )
 }
