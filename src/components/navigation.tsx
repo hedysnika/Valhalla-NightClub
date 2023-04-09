@@ -13,26 +13,7 @@ export function Navigation() {
     const [opened, { toggle }] = useDisclosure(false);
 
     useEffect(() => {
-        if (localeChanged) {
-          notifications.show({
-            title: "aegaeg",
-            message: "aegaeg",
-            autoClose: 3000,
-            styles: (theme) => ({
-              root: {
-                backgroundColor: '#25262B',
-                borderColor: '#25262B',
-                '&::before': { backgroundColor: '#9C36B5' },
-              },
-              title: { color: theme.white },
-              description: { color: 'rgb(144, 146, 150)' },
-              closeButton: {
-                color: theme.white,
-                '&:hover': { backgroundColor: '#9C36B5' },
-              },
-            }),
-          });
-    
+        if (localeChanged) {    
           setLocaleChanged(false);
         }
       }, [localeChanged, t]);
@@ -51,14 +32,23 @@ export function Navigation() {
     
   
     return (
-        <div className="fixed bg-[#0F0F0F] mg:h-[80px] h-[60px] text-white w-full">
+        <div className="fixed bg-[#0F0F0F] mg:h-[80px] h-[60px] text-white w-full z-50">
+                                <div className="flex justify-between md:hidden">
+
                                 <Burger
-            className="ml-5 mt-[10px] md:ml-0 md:mt-0 md:hidden"
+            className="ml-5 mt-[12px] md:ml-0 md:mt-0 md:hidden"
             onClick={handleToggle}
             color="white"
             size={22}
             opened={opened}
-          />
+            />
+           <div
+            className="pr-10 mt-[12px] md:pr-0 md:mt-0 md:hidden"
+            >
+            lang
+          </div>
+            </div>
+
                     <Drawer
           opened={opened}
           onClose={() => toggle()}
