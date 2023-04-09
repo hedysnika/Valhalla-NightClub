@@ -18,6 +18,7 @@ const { t } = useTranslation("common");
       <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/wpYjTDT.png"/></Carousel.Slide>
       <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/IM0tx8D.png"/></Carousel.Slide>
       <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/RLBTuxk.png"/></Carousel.Slide>
+      <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/EifsRkv.png"/></Carousel.Slide>
     </Carousel>
 
       </div>
