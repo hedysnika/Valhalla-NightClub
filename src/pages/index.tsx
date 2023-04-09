@@ -10,24 +10,16 @@ const { t } = useTranslation("common");
   
   return (
     <main  className="h-auto min-h-screen bg-black pt-[80px]">
-      <div className='text-white'>
-        <p className="w-[60%] mr-auto ml-auto py-20">
-          <div className="flex flex-row items-center justify-center pb-10">
+      <div className='text-[#e7d0ba]'>
+        <p className="md:w-[60%] text-center mr-auto ml-auto py-20 text-[14px]">
+          <div className="flex flex-row items-center justify-center pb-10 text-white">
           <h1 className="text-4xl font-bold">
             Valhalla 
             </h1>
-            <h2 className="pl-4 mt-2 text-xl">
+            <h2 className="pl-4 mt-2 text-sm md:text-xl">
                ღამისკლუბი
               </h2>
           </div>
-      გასული ექვსი თვის განმავლობაში, Valhalla ღამისკლუბ-მა ქარიშხალივით მოიცვა ჩვენი ქალაქი და სწრაფად დაიმკვიდრა თავი,  
-      როგორც წვეულების ეპიცენტრათ, იმათთვის ვინც ეძებს დაუვიწყარ ღამეებს, სავსე სასიამვნო მუსიკით და უწყვეტი ცეკვით.  
-      ჩვენმა კლუბმა, სწრაფად მოიპოვა რეპუტაცია შეუდარებელი გამოცდილების მიწოდებისა და ძლიერი ატმოსფეროს გამო, რომელსაც სხვაგან ვერ ნახავ. 
-        
-       Valhalla-ს კლუბი არ არის მხოლოდ განსატვირთი ადგილი; 
-       ეს არის გამოცდილება, რომელიც დაგიტოვებთ მეტის სურვილს. 
-       შემოგვიერთდით ღამეს, რომელიც არ დაგავიწყდებათ და გახდით ჩვენი მზარდი მოყვარულთა საზოგადოების ნაწილი, 
-       რომლებმაც აღმოაჩინეს გართობის ნამდვილი არსი.
        {t('hometext')}
         </p>
 
