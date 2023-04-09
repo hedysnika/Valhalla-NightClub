@@ -14,8 +14,8 @@ const { t } = useTranslation("common");
     <main  className="h-auto min-h-screen bg-black">
       <div className="pt-[50px] md:pt-[80px]">
       <Carousel withIndicators height={350} slideSize="80%" slideGap="md">
-      <Carousel.Slide><Image alt="nightclub tbilisi" width={300} height={350} src="https://i.imgur.com/jsBPE8i.png"/></Carousel.Slide>
-      <Carousel.Slide><Image alt="nightclub tbilisi" width={300} height={350} src="https://i.imgur.com/IM0tx8D.png"/></Carousel.Slide>
+      <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/jsBPE8i.png"/></Carousel.Slide>
+      <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/IM0tx8D.png"/></Carousel.Slide>
     </Carousel>
 
       </div>
