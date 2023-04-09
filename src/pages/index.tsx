@@ -20,7 +20,7 @@ const { t } = useTranslation("common");
 
       </div>
       <div className='text-[#e7d0ba]'>
-        <p className="md:w-[60%] text-center mr-auto ml-auto py-20 text-xs">
+        <p className="md:w-[60%] text-center mr-auto ml-auto pb-20 pt-5 w-[85%] leading-6 text-xs">
           <div className="flex flex-row items-center justify-center pb-10 text-white">
           <h1 className="text-4xl font-bold">
             Valhalla 
