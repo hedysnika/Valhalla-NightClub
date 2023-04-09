@@ -6,7 +6,7 @@ export default function About() {
 
     return (
         <div className="min-h-[90vh] h-auto pt-2 bg-black">
-          <div className="px-20 pt-20 md:w-[60%] text-center text-white">
+          <div className="px-8 pt-20 md:w-[60%] text-center text-white">
 
         <span className="text-xs" >
           {t('text-1')}
