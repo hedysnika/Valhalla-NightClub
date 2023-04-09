@@ -1,51 +1,77 @@
 import { Layout } from "@/components/layout";
 import { Carousel } from "@mantine/carousel";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations"; 
-import Image from "next/image";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+const useWindowWidth = () => {
+  const [windowWidth, setWindowWidth] = useState(typeof window !== "undefined" ? window.innerWidth : 0);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return windowWidth;
+};
 
 export default function Home() {
-const { t } = useTranslation("common");
+  const { t } = useTranslation("common");
+  const windowWidth = useWindowWidth();
 
-
-
-  
   return (
     <Layout>
-    <main  className="h-auto min-h-screen bg-black">
-      <div className="pt-[65px] md:pt-[80px]">
-      <Carousel withIndicators height={350} slideSize="80%" slideGap="md">
-      <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/jsBPE8i.png"/></Carousel.Slide>
-      <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/wpYjTDT.png"/></Carousel.Slide>
-      <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/IM0tx8D.png"/></Carousel.Slide>
-      <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/RLBTuxk.png"/></Carousel.Slide>
-      <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/EifsRkv.png"/></Carousel.Slide>
-    </Carousel>
+      <main className="h-auto min-h-screen bg-black">
+        <div className="pt-[65px] md:pt-[80px]">
+          <Carousel
+            withIndicators
+            slideGap="md"
+            height={windowWidth >= 768 ? 480 : 400}
+            slideSize={windowWidth >= 768 ? "40%" : "100%"}
+            align="start"
+          >
+            <Carousel.Slide>
+              <img alt="nightclub tbilisi" src="https://i.imgur.com/jsBPE8i.png" />
+            </Carousel.Slide>
+            <Carousel.Slide>
+              <img alt="nightclub tbilisi" src="https://i.imgur.com/wpYjTDT.png" />
+            </Carousel.Slide>
+            <Carousel.Slide>
+              <img alt="nightclub tbilisi" src="https://i.imgur.com/IM0tx8D.png" />
+            </Carousel.Slide>
+            <Carousel.Slide>
+              <img alt="nightclub tbilisi" src="https://i.imgur.com/RLBTuxk.png" />
+            </Carousel.Slide>
+            <Carousel.Slide>
+              <img alt="nightclub tbilisi" src="https://i.imgur.com/EifsRkv.png" />
+            </Carousel.Slide>
+          </Carousel>
+        </div>
+        <div className="text-[#e7d0ba]">
+          <p className="md:w-[60%] text-center mr-auto ml-auto pb-20 pt-5 w-[85%] leading-6 text-xs">
+            <div className="flex flex-row items-center justify-center pb-10 text-white">
+              <h1 className="text-4xl font-bold">Valhalla</h1>
+              <h2 className="pl-4 mt-2 text-sm md:text-xl">ღამისკლუბი</h2>
+            </div>
+            {t("hometext")}
+          </p>
+        </div>
 
-      </div>
-      <div className='text-[#e7d0ba]'>
-        <p className="md:w-[60%] text-center mr-auto ml-auto pb-20 pt-5 w-[85%] leading-6 text-xs">
-          <div className="flex flex-row items-center justify-center pb-10 text-white">
-          <h1 className="text-4xl font-bold">
-            Valhalla 
-            </h1>
-            <h2 className="pl-4 mt-2 text-sm md:text-xl">
-               ღამისკლუბი
-              </h2>
-          </div>
-       {t('hometext')}
-        </p>
-
-      </div>
-
-      <div className="pb-5 text-xs text-center text-[#c9c9c9] font-light">
-      Rkinis Rigi N11, Tbilisi, Georgia <br />
-      +995 595 20 86 68<br />
-      </div>
-    </main>
+        <div className="pb-5 text-xs text-center text-[#c9c9c9] font-light">
+          Rkinis Rigi N11, Tbilisi, Georgia <br />
+          +995 595 20 86 68
+          <br />
+        </div>
+      </main>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps({ locale }: { locale: any }) {
