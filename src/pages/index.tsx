@@ -9,7 +9,7 @@ const { t } = useTranslation("common");
 
   
   return (
-    <main  className="h-screen min-h-screen bg-black pt-[80px]">
+    <main  className="h-auto min-h-screen bg-black pt-[80px]">
       <div className='text-white'>
         <p className="w-[60%] mr-auto ml-auto py-20">
           <div className="flex flex-row items-center justify-center pb-10">

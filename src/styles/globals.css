@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+  
+
+  .mantine-Textarea-root {
+    background-color: #262626;
+  }
+  
+  .mantine-Textarea-input {
+    color: white;
+    background-color: #262626;
+    border: none;
+  }
+  
+  .mantine-Textarea-label {
+    color: white;
+  }
+  
+  .body {
+    overflow-x: hidden;
+  }
+  
+  .mantine-Textarea-root .mantine-Textarea-input {
+    color: white;
+    background-color: #2C2C2C;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+    .mantine-Chip-label {
+    width: 120px;
+    padding-left: 29px;
+  }
+
+  .mantine-Drawer-inner	{
+    margin-top: 50px;
+  }
+
+  .mantine-Drawer-content {
+    background-color: #161618;
+  }
+
+
+@media screen and (max-width: 767px) {
+  .mantine-14zcsvh {
+    max-width: 16rem;
+  }
+  .mantine-uslpjn {
+    font-size: 0.800rem;
+  }
+}
+
+
+.mantine-pz9a1v {
+  color: #7e7e7e;
+}
+
+.mantine-1b20ey0 {
+  color: #5e5e5e;
+}
