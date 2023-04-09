@@ -1,8 +1,9 @@
 import { Navigation } from '@/components/navigation'
 import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import { appWithTranslation } from 'next-i18next';
+import type { AppType } from 'next/app'
 
-export default function App({ Component, pageProps }: AppProps) {
+const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <div>
     <Navigation />
@@ -11,3 +12,5 @@ export default function App({ Component, pageProps }: AppProps) {
 
   )
 }
+
+export default appWithTranslation(MyApp);

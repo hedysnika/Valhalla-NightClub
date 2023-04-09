@@ -1,4 +1,5 @@
 
+/** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
   i18n: {
