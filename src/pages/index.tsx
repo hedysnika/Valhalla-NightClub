@@ -33,9 +33,9 @@ export default function Home() {
           <Carousel
             withIndicators
             slideGap="md"
-            height={windowWidth >= 768 ? 480 : 400}
-            slideSize={windowWidth >= 768 ? "40%" : "100%"}
-            align="start"
+            height={windowWidth >= 768 ? 480 : 350}
+            slideSize={windowWidth >= 768 ? "40%" : "80%"}
+            align={windowWidth >= 768 ? "start" : "center"}
           >
             <Carousel.Slide>
               <img alt="nightclub tbilisi" src="https://i.imgur.com/jsBPE8i.png" />

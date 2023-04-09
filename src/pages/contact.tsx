@@ -9,7 +9,7 @@ export default function About() {
       <Layout>
         <div className="h-auto min-h-[90vh] text-center text-white bg-black md:pt-[80] pt-[60px] ">
           <div className="text-xl py-14">
-            {t('contactus')}
+            {t('contactus')   }
             </div>          
             <div className="px-20 text-xs md:w-[40%]">
               მაგიდის დასაჯავშნად დარეკეთ შემდეგ ნომერზე: 599 99 99 99 <br />
