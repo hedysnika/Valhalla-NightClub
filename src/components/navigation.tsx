@@ -1,4 +1,4 @@
-import { Burger, Drawer } from "@mantine/core";
+import { Burger, Drawer, Popover } from "@mantine/core";
 import Link from "next/link"
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useState } from "react";
@@ -47,7 +47,19 @@ export function Navigation() {
            <div
             className="pr-10 mt-[12px] md:pr-0 md:mt-0 md:hidden"
             >
-            lang
+                  <Popover width={200} position="bottom" withArrow shadow="md">
+      <Popover.Target>
+        <div>{t('languagee')}</div>
+      </Popover.Target>
+      <Popover.Dropdown className="p-0 border-none">
+        <div className="flex flex-col py-4 text-white bg-black gap-y-3">
+        <button onClick={() => changeLanguage("ge")}>GE</button>
+        <button onClick={() => changeLanguage("en")}>EN</button>
+        <button onClick={() => changeLanguage("ru")}>RU</button>
+        </div>
+      </Popover.Dropdown>
+    </Popover>
+
           </div>
             </div>
 
