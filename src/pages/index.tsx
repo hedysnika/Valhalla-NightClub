@@ -1,3 +1,4 @@
+import { Layout } from "@/components/layout";
 import { Carousel } from "@mantine/carousel";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"; 
 import Image from "next/image";
@@ -11,6 +12,7 @@ const { t } = useTranslation("common");
 
   
   return (
+    <Layout>
     <main  className="h-auto min-h-screen bg-black">
       <div className="pt-[65px] md:pt-[80px]">
       <Carousel withIndicators height={350} slideSize="80%" slideGap="md">
@@ -42,6 +44,7 @@ const { t } = useTranslation("common");
       +995 595 20 86 68<br />
       </div>
     </main>
+    </Layout>
   )
 }
 

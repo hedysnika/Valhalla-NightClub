@@ -9,11 +9,9 @@ import { Footer } from '@/components/footer';
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <div>
-    <Navigation />
     <MantineProvider withNormalizeCSS withGlobalStyles>
     <Notifications />
   <Component {...pageProps} />
-  <Footer />
     </MantineProvider>
     </div>
 

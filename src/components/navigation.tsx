@@ -1,5 +1,4 @@
 import { Burger, Drawer } from "@mantine/core";
-import { notifications } from "@mantine/notifications";
 import Link from "next/link"
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useState } from "react";
@@ -12,6 +11,11 @@ export function Navigation() {
     const [localeChanged, setLocaleChanged] = useState(false);
     const [opened, { toggle }] = useDisclosure(false);
 
+    const handleToggle = useCallback(() => {
+      toggle();
+    }, [opened, toggle]);
+
+    
     useEffect(() => {
         if (localeChanged) {    
           setLocaleChanged(false);
@@ -26,9 +30,7 @@ export function Navigation() {
           console.error('Error changing language:', error);
         }
       };
-      const handleToggle = useCallback(() => {
-        toggle();
-      }, [opened, toggle]);
+      
     
   
     return (

@@ -1,3 +1,4 @@
+import { Layout } from "@/components/layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "react-i18next";
 
@@ -5,6 +6,7 @@ export default function About() {
   const { t } = useTranslation("common");
   
     return (
+      <Layout>
         <div className="h-auto min-h-[90vh] text-center text-white bg-black md:pt-[80] pt-[60px] ">
           <div className="text-xl py-14">
             {t('contactus')}
@@ -17,6 +19,7 @@ export default function About() {
 
           
         </div>
+        </Layout>
     );
   }
 
