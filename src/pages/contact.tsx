@@ -9,7 +9,7 @@ export default function About() {
           <div className="text-xl py-14">
             {t('contactus')}
             </div>          
-            <div>
+            <div className="px-20 text-xs md:w-[40%]">
               მაგიდის დასაჯავშნად დარეკეთ შემდეგ ნომერზე: 599 99 99 99 <br />
               ან დააჭირეთ ამ ღილაკს <br />
               ინფორმაციისთვის გადადით ჩვენს შესახებ გვერდზე ან დააჭირეთ ამ ღილაკს
