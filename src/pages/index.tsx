@@ -11,7 +11,7 @@ const { t } = useTranslation("common");
   return (
     <main  className="h-auto min-h-screen bg-black pt-[80px]">
       <div className='text-[#e7d0ba]'>
-        <p className="md:w-[60%] text-center mr-auto ml-auto py-20 text-[14px]">
+        <p className="md:w-[60%] text-center mr-auto ml-auto py-20 text-xs">
           <div className="flex flex-row items-center justify-center pb-10 text-white">
           <h1 className="text-4xl font-bold">
             Valhalla 
