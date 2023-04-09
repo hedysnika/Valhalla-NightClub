@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 
 export function Footer() {
   return (
-    <footer className="absolute bottom-0 w-full text-white">
+    <footer className="w-full text-white bg-black">
       <div className='flex flex-row w-[40%] py-3 mr-auto ml-auto justify-center items-center gap-4'>
       <div><Icon icon="ic:baseline-facebook" width="35" height="35" /></div>
       <div><Icon icon="mdi:facebook-messenger"  width="35" height="35" /></div>
