@@ -2,7 +2,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function About() {
     return (
-        <div className="min-h-[90vh] h-auto  bg-black">
+        <div className="min-h-[90vh] h-auto pt-2 bg-black">
           <div className="py-5 text-white">
 
         <span>

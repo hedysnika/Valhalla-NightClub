@@ -12,7 +12,7 @@ const { t } = useTranslation("common");
   
   return (
     <main  className="h-auto min-h-screen bg-black">
-      <div className="pt-[50px] md:pt-[80px]">
+      <div className="pt-[65px] md:pt-[80px]">
       <Carousel withIndicators height={350} slideSize="80%" slideGap="md">
       <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/jsBPE8i.png"/></Carousel.Slide>
       <Carousel.Slide><img  alt="nightclub tbilisi"  src="https://i.imgur.com/IM0tx8D.png"/></Carousel.Slide>

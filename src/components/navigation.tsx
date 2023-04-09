@@ -51,7 +51,7 @@ export function Navigation() {
     
   
     return (
-        <div className="fixed bg-[#0F0F0F] mg:h-[80px] h-[50px] text-white w-full">
+        <div className="fixed bg-[#0F0F0F] mg:h-[80px] h-[60px] text-white w-full">
                                 <Burger
             className="ml-5 mt-[10px] md:ml-0 md:mt-0 md:hidden"
             onClick={handleToggle}
