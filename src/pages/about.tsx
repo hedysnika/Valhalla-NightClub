@@ -6,11 +6,11 @@ export default function About() {
 
     return (
         <div className="min-h-[90vh] h-auto pt-2 bg-black">
-          <div className="py-5 text-white">
+          <div className="px-20 pt-20 md:w-[60%] text-center text-white">
 
-        <span>
+        <span className="text-xs" >
           {t('text-1')}
-</span> <span>
+</span> <span className="text-xs" >
 
 როგორი Face-Control-ი გაქვთ? შესვლა დასაშვებია 21 წლიდან . 🚫
 
