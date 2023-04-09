@@ -1,25 +1,24 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation("common");
+
     return (
         <div className="min-h-[90vh] h-auto pt-2 bg-black">
           <div className="py-5 text-white">
 
         <span>
-          WHERE IS VALHALLA CLUB? VALHALLA CLUB is located AT SHARDENI TBILISI at Rkinis rigi N 11, 0144. 🌃
+          {t('text-1')}
 </span> <span>
-  
-IS THERE A DRESS CODE? Come as you are, as long as you’re not wearing sandals. 👡
 
-WHAT ARE THE AGE RESTRICTIONS? შესვლა დასაშვებია 21 წლიდან . 🚫
+როგორი Face-Control-ი გაქვთ? შესვლა დასაშვებია 21 წლიდან . 🚫
 
 როგორ შევუკვეთო მაგიდა? მაგიდის შესაკვეთათ გთხოვთ გადახვიდეთ კონტაქტის გვერდზე. 🍾
 
 არის თუ არა გადაღება დასაშვები კლუბში? დასაშვებია თუ გადაღების პროცესში არ იყენებთ მაღალ შუქს. 📸
 
 მე დამრჩა თქვენთან ნივთი, როგორ შემიძლია დავიბრუნო? თუ გაქვთ იმის ეჭვი, რომ ჩვენს კლუბში დაგრჩათ პირადი ნივთი, გთხოვთ შეგვეხმიანოთ შემდეგ ნომერზე საღამოს 8-დან დილის 5მდე . ☎️ 
-
-WHAT CAN’T I BRING TO CLUB SPACE? Club Space does not permit any hula hoops, glow sticks, or any object that can be used as a projectile. We also do not allow any weapons such as firearms, knives, or pepper spray into the venue. This is in the best interest of all of our Space Invaders. 👽
 
 </span>
     </div>
