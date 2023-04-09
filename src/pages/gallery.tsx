@@ -2,8 +2,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function About() {
     return (
-        <div>
-        <h1>About</h1>
+        <div className="min-h-[90vh] h-auto bg-black">
+          <img src="" alt="" />
+
         </div>
     );
     }
