@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className="text-[#e7d0ba]">
           <p className="md:w-[60%] text-center mr-auto ml-auto pb-20 pt-5 w-[85%] leading-6 text-xs">
-            <div className="flex flex-row items-center justify-center pb-10 text-white">
+            <div className="flex flex-col items-center justify-center pb-10 text-white">
               <h1 className="text-4xl font-bold">Valhalla</h1>
               <h2 className="pl-4 mt-2 text-sm md:text-xl">ღამისკლუბი</h2>
             </div>
