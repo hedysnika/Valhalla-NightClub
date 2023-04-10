@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
@@ -12,9 +13,11 @@ export default function About() {
             {t('contactus')   }
             </div>          
             <div className="px-20 text-xs md:w-[40%]">
-              მაგიდის დასაჯავშნად დარეკეთ შემდეგ ნომერზე: <a href="tel:+995595208668"></a> 
-              ან დააჭირეთ ამ ღილაკს <br />
-              ინფორმაციისთვის გადადით ჩვენს შესახებ გვერდზე ან დააჭირეთ ამ ღილაკს
+              მაგიდის დასაჯავშნად დარეკეთ შემდეგ ნომერზე: <a href="tel:+995595208668" className="text-[#a2aaff]">595208668</a>  <br />
+              ინფორმაციისთვის გადადით ჩვენს  
+              <Link href="/about" className=" px-1 text-[#a2aaff]" >
+               შესახებ გვერდზე
+              </Link>
             </div>
 
           
