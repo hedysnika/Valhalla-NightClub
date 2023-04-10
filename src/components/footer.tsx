@@ -9,7 +9,7 @@ export function Footer() {
       <Link href="https://www.facebook.com/valhallaclub11"><Icon icon="mdi:facebook-messenger"  width="25" height="25" /></Link >
       <Link href="https://www.instagram.com/valhallaclub11/"><Icon icon="mdi:instagram" width="25" height="25" /></Link>
       <Link href="https://www.tiktok.com/@valhalla_club11"><Icon icon="iconoir:tiktok" width="25" height="25" /></Link >
-      <a href="tel:+995571174686"><Icon icon="material-symbols:phone-enabled-sharp" width="25" height="25" /></a>
+      <a href="tel:+995595208668"><Icon icon="material-symbols:phone-enabled-sharp" width="25" height="25" /></a>
       </div>
       <div className='pt-3 pb-1 text-xs text-center'>
         All Rights Reserved. © 2023 <br />

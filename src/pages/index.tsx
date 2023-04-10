@@ -63,6 +63,15 @@ export default function Home() {
             {t("hometext")}
           </p>
         </div>
+        <iframe
+          title="Google Map"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDqTLL7WOfkfwa700iTGlhAxTiNVLxjZoA&q=Rkinis+Rigi+N11,+Tbilisi,+Georgia&zoom=15"
+          width="100%"
+          height="400"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+        ></iframe>
 
         <div className="pb-5 text-xs text-center text-[#c9c9c9] font-light">
           Rkinis Rigi N11, Tbilisi, Georgia <br />
